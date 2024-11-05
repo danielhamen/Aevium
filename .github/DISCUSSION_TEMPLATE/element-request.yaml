@@ -1,28 +1,86 @@
 body:
   - type: markdown
     attributes:
-      value: "# Element Request"
+      value: "# Aevium Core Element Request"
 
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to start a new discussion! If you need real-time help, join us on Discord.
-
-  - type: textarea
-    id: element_description
-    attributes:
-      label: Description
-      description: "Describe the element and its functionality in-depth. Answering questions like why it’s useful, how customizable it is, etc., will improve chances of being approved."
-      placeholder: "E.g., A <Spacer /> element similar to SwiftUI’s Spacer. This would be useful as..."
-    validations:
-      required: true
+        Thank you for starting a new discussion about a React component (Aevium Core Element) request! If you need real-time help, feel free to join our Discord channel.
 
   - type: dropdown
     id: request_type
     attributes:
       label: Request Type
+      description: "Choose the type of request you are making."
       options:
         - Addition (create new element)
-        - Removal (remove existing element)
         - Modification (modify existing element – create minor or major change)
         - Deprecate/Replacement (deprecate or replace element with another one)
+    validations:
+      required: true
+
+  - type: textarea
+    id: element_description
+    attributes:
+      label: Element Description
+      description: "Provide a detailed description of the element, including its purpose, functionality, and any specific use cases. This information will improve the chances of approval."
+      placeholder: "E.g., A <Spacer /> element similar to SwiftUI’s Spacer. This would be useful as..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: functionality_requirements
+    attributes:
+      label: Functionality Requirements
+      description: "Describe any specific functionality requirements, such as props, event handlers, or customizable options for this element."
+      placeholder: "E.g., Should accept 'size' prop for spacing dimensions and support alignment options."
+    validations:
+      required: false
+
+  - type: textarea
+    id: design_requirements
+    attributes:
+      label: Design Requirements
+      description: "Describe any design requirements or visual guidelines. Include aspects like color schemes, typography, padding, and alignment."
+      placeholder: "E.g., Should adhere to Aevium’s design guidelines with a minimalistic, accessible style."
+    validations:
+      required: false
+
+  - type: input
+    id: priority_level
+    attributes:
+      label: Priority Level
+      description: "Rate the importance of this request on a scale from 1 (low) to 5 (high)."
+      type: number
+      min: 1
+      max: 5
+    validations:
+      required: true
+
+  - type: textarea
+    id: use_cases
+    attributes:
+      label: Use Cases
+      description: "List specific scenarios where this element will be useful. Think of pages, workflows, or contexts in which this component will be implemented."
+      placeholder: "E.g., Can be used in layouts where variable spacing is required or in forms for input separation."
+    validations:
+      required: false
+
+  - type: textarea
+    id: compatibility_notes
+    attributes:
+      label: Compatibility Notes
+      description: "Specify if there are any compatibility requirements or restrictions with other elements, frameworks, or libraries."
+      placeholder: "E.g., Should work seamlessly with Aevium’s Form components and Grid layout system."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: Additional Notes
+      description: "Provide any extra information or relevant links, such as references, design prototypes, or GitHub issues."
+      placeholder: "E.g., Reference component design: [Figma link]"
+    validations:
+      required: false
