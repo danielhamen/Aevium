@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "../www",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "allowJs": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@Aevium/*": ["./lib/Aevium/*"]
+    }
+  },
+  "include": ["app/**/*", "lib/**/*", "scripts/**/*", "*", "/App.tsx"]
+}

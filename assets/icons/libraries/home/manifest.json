@@ -1,0 +1,28 @@
+[
+  {
+    "icon": "home",
+    "name": "Home",
+    "desc": "Home icon.",
+    "id": "HOME",
+    "author": "Aevium",
+    "classes": ["general", "navigation"],
+    "metadata": {
+      "artboard": {
+        "width": 72,
+        "height": 72
+      }
+    },
+    "history": [
+      {
+        "date": {
+          "year": "2024",
+          "month": "10",
+          "day": "22",
+          "time": "9:46:02"
+        },
+        "title": "Initial Creation",
+        "desc": "Initial creation of 'HOME' icon"
+      }
+    ]
+  }
+]
