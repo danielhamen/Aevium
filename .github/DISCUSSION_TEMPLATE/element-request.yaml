@@ -1,10 +1,12 @@
 body:
   - type: markdown
-    value: "# Element Request"
+    attributes:
+      value: "# Element Request"
 
   - type: markdown
-    value: |
-      Thanks for taking the time to start a new discussion! If you need real-time help, join us on Discord.
+    attributes:
+      value: |
+        Thanks for taking the time to start a new discussion! If you need real-time help, join us on Discord.
 
   - type: textarea
     id: element_description
@@ -23,4 +25,4 @@ body:
         - Addition (create new element)
         - Removal (remove existing element)
         - Modification (modify existing element – create minor or major change)
-        - Depreciation/Replacement (deprecate or replace element with another one)
+        - Deprecate/Replacement (deprecate or replace element with another one)
