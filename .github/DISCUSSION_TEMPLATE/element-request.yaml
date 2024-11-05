@@ -52,9 +52,6 @@ body:
     attributes:
       label: Priority Level
       description: "Rate the importance of this request on a scale from 1 (low) to 5 (high)."
-      type: number
-      min: 1
-      max: 5
     validations:
       required: true
 
