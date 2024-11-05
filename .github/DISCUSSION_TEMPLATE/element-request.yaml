@@ -1,0 +1,26 @@
+body:
+  - type: markdown
+    value: "# Element Request"
+
+  - type: markdown
+    value: |
+      Thanks for taking the time to start a new discussion! If you need real-time help, join us on Discord.
+
+  - type: textarea
+    id: element_description
+    attributes:
+      label: Description
+      description: "Describe the element and its functionality in-depth. Answering questions like why it’s useful, how customizable it is, etc., will improve chances of being approved."
+      placeholder: "E.g., A <Spacer /> element similar to SwiftUI’s Spacer. This would be useful as..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Request Type
+      options:
+        - Addition (create new element)
+        - Removal (remove existing element)
+        - Modification (modify existing element – create minor or major change)
+        - Depreciation/Replacement (deprecate or replace element with another one)
